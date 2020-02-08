@@ -11,7 +11,7 @@ public class WebhookTest {
 
 	public static void main(String[] args) throws StripeException {
 		
-    	Stripe.apiKey ="sk_test_BdavkaT4hXelQXTZa7NzhS4k";
+    	Stripe.apiKey ="sk_test_*******"; //add your api key
     	List<Object> events = new ArrayList<Object>();
     	events.add("charge.succeeded");
     	events.add("charge.failed");
