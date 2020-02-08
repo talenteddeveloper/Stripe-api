@@ -1,4 +1,3 @@
-package stripe.payment;
 
 import java.util.*;
 
@@ -9,8 +8,8 @@ import com.stripe.model.Charge;
 public class ChargeCustomer {
 
 	public static void main(String[] args) throws StripeException {
-		Stripe.apiKey ="sk_test*******";
-    Map<String, Object> params = new HashMap<>();
+		Stripe.apiKey ="sk_test*******"; // add your api key
+    		Map<String, Object> params = new HashMap<>();
 		params.put("amount", 3000);
 		params.put("currency", "usd");
 		params.put("customer", "cus_DTN7GkeFdnvEDb");
