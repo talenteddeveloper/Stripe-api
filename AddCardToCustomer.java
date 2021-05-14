@@ -36,5 +36,7 @@ public class AddCardToCustomer {
 		System.out.println("Card Details : " + cardDetails);
 		customer = Customer.retrieve("cus_JPujEY8mNST4rf");
 		System.out.println("After adding card, customer details : " + customer);
+		
+		// sample output in stripe dashboard : https://github.com/talenteddeveloper/Stripe-api/blob/master/Added%20Card.jpg
 	}
 }
