@@ -12,6 +12,7 @@ import com.stripe.model.Token;
 public class AddCardToCustomerUpdatedCode {
 	public static void main(String[] args) throws StripeException {
 		
+		//strive maven version : <version>20.51.0</version>
 
 		// add stripe key
 		Stripe.apiKey = "sk_test_BdavkaT4hXelQXTZa7NzhS4k"; 
