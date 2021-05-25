@@ -15,6 +15,8 @@ public class AddCardToCustomer {
 
 		// add stripe key
 		Stripe.apiKey = "*****"; 
+		
+		//for updated code, check here : https://github.com/talenteddeveloper/Stripe-api/edit/master/AddCardToCustomerUpdatedCode.java
 
 		Customer customer = Customer.retrieve("cus_JPujXXXX"); //add customer id here : it will start with cus_
 		Map<String, Object> cardParam = new HashMap<String, Object>(); //add card details
