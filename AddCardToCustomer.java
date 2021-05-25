@@ -36,7 +36,7 @@ public class AddCardToCustomer {
 		Card card = (Card)customer.getSources().create(source); // add the customer details to which card is need to link
 		String cardDetails = card.toJson();
 		System.out.println("Card Details : " + cardDetails);
-		customer = Customer.retrieve("cus_JPujEY8mNST4rf");
+		customer = Customer.retrieve("cus_JPujXXXX");//change the customer id or use to get customer by id
 		System.out.println("After adding card, customer details : " + customer);
 		
 		// sample output in stripe dashboard : https://github.com/talenteddeveloper/Stripe-api/blob/master/Added%20Card.jpg
