@@ -15,7 +15,7 @@ public class AddCardToCustomerUpdatedCode {
 		//strive maven version : <version>20.51.0</version>
 
 		// add stripe key
-		Stripe.apiKey = "sk_test_BdavkaT4hXelQXTZa7NzhS4k"; 
+		Stripe.apiKey = "sk_test_*****"; //test key will start with sk_test
 		 
 		/*Earlier we used to retrieve normally*/
 		//Customer customer = Customer.retrieve("cus_JPujXXXX"); 
@@ -25,7 +25,7 @@ public class AddCardToCustomerUpdatedCode {
 		List<String> expandList = new ArrayList<String>();
 		expandList.add("sources");
 		retrieveParams.put("expand", expandList);
-		Customer customer = Customer.retrieve("cus_JPujEY8mNST4rf", retrieveParams, null); //add customer id here : it will start with cus_
+		Customer customer = Customer.retrieve("cus_JPujEY8****", retrieveParams, null); //add customer id here : it will start with cus_
 		
 		Map<String, Object> cardParam = new HashMap<String, Object>(); //add card details
 		cardParam.put("number", "4111111111111111");
@@ -44,7 +44,7 @@ public class AddCardToCustomerUpdatedCode {
 		Card card = (Card)customer.getSources().create(source); // add the customer details to which card is need to link
 		String cardDetails = card.toJson();
 		System.out.println("Card Details : " + cardDetails);
-		customer = Customer.retrieve("cus_JPujEY8mNST4rf");
+		customer = Customer.retrieve("cus_JPujEY8***");//change the customer id or use to get customer by id.
 		System.out.println("After adding card, customer details : " + customer);
 		
 		// sample output in stripe dashboard : https://github.com/talenteddeveloper/Stripe-api/blob/master/Added%20Card.jpg
