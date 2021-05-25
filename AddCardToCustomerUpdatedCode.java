@@ -17,7 +17,7 @@ public class AddCardToCustomerUpdatedCode {
 		// add stripe key
 		Stripe.apiKey = "sk_test_*****"; //test key will start with sk_test
 		 
-		/*Earlier we used to retrieve normally*/
+		/*Earlier we used to retrieve normally, for more check here : https://github.com/talenteddeveloper/Stripe-api/blob/master/AddCardToCustomer.java*/
 		//Customer customer = Customer.retrieve("cus_JPujXXXX"); 
 		
 		/*Now in updated stripe version, need to add source and other params */
